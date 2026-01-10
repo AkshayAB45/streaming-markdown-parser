@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Streaming Markdown Parser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      padding: 8px 16px;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #dcdcdc;
+      padding: 8px;
+      white-space: pre-wrap;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="stream">Stream</button>
+
+  <div id="markdownContainer"></div>
+
+  <!-- Load compiled JS -->
+  <script src="../dist/MarkdownParser.js"></script>
+
+  <script>
+    document
+      .getElementById("stream")
+      .addEventListener("click", runStream);
+  </script>
+
+</body>
+</html>
